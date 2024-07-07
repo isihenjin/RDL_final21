@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+.first-view {
+  height: calc(100vh - 110px);
+  background-image: url(../images/common/logo_footer.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.first-view-text {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 30px;
+  margin-right: 0;
+  padding-left: 40px;
+  padding-bottom: 80px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.first-view-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 56px;
+  line-height: 72px;
+}
+
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.lead p {
+  line-height: 2;
+  text-align: center;
+}
+
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.item {
+  width: 20%;
+  margin: 1%;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.item img {
+  max-width: 100%;
+}
+
+.link-button {
+  background-color: #ec8b1c;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  background-color: #ec8b1c;
+}
+
+
+
+@media (max-width: 800px) {
+
+  .first-view-text {
+    margin-left: 0;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 50px;
+  }
+
+  .first-view-text h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .first-view-text p {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .lead {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .lead p {
+    text-align: left;
+  }
+
+  .first-view {
+    height: 50vh; /* 高さを半分に設定 */
+    background-image: url(../images/common/logo_footer.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%; /* 幅を100%に設定 */
+  }
+  .header-site-menu {
+    position: absolute;
+    top: 100%; /* ヘッダーの下に配置 */
+    left: 0;
+    right: 0;
+    background-color: rgb(30, 211, 30); /* 背景色を指定 */
+  }
+  
+}

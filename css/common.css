@@ -1,0 +1,186 @@
+@charset "utf-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #666666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo img {
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+}
+
+.title-text {
+    color: rgb(255, 255, 255);
+    left: 8%;
+}
+
+.header-site-menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer {
+    background-color: ##666666;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.contact {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.social-media img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+@media (min-width: 800px) {
+    .footer .site-menu a {
+        color: #FFFFFF;
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        padding-top: 50px;
+    }
+
+    .site-menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .site-menu li {
+        margin-top: 20px;
+        z-index: 2;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        height: 50px;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-inner {
+        padding-right: 20px;
+        height: 100%;
+        position: relative;
+    }
+
+    .header-logo img {
+        max-width: 65px;
+        height: auto;
+        left: 0;
+    }
+
+    .header-site-menu {
+        position: absolute;
+        top: 60px; /* ヘッダーの高さと一致させる */
+        left: 0;
+        right: 0;
+        width: 100%;
+        color: #FFFFFF;
+        background-color: #666666;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: none;
+        z-index: 1;
+    }
+
+    .toggle-menu-button {
+        z-index: 2;
+        display: block;
+        width: 44px;
+        height: 34px;
+        background-image: url(../images/common/bar.png);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        outline: none;
+    }
+
+    .header-site-menu.is-show {
+        display: block;
+    }
+
+    .header-site-menu a {
+        color: #FFFFFF;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .site-menu {
+        margin-bottom: 50px;
+    }
+
+    .footer .social-media {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+    .footer .social-media a {
+        margin: 0 10px;
+    }
+
+    .footer .site-menu a {
+        color: #FFFFFF; /* フッターのサイトメニューの文字色を白に変更 */
+    }
+}
