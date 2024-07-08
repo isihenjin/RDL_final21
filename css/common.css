@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Noto Serif JP", serif;
     margin: 0;
     padding: 0;
 }
@@ -25,11 +25,6 @@ header {
     width: 100%;
 }
 
-.header-logo img {
-    margin-right: auto;
-    width: 100px;
-    height: auto;
-}
 
 .title-text {
     color: rgb(255, 255, 255);
@@ -61,28 +56,15 @@ nav ul li a {
 }
 
 footer {
-    background-color: ##666666;
+    background-color: #666666;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
 }
-
-.contact {
-    text-align: center;
+.site-menu{
     color: rgb(255, 255, 255);
-}
-
-.social-media img {
-    height: 40px;
-    margin-left: 20px;
-}
-
-@media (min-width: 800px) {
-    .footer .site-menu a {
-        color: #FFFFFF;
-    }
 }
 
 @media (max-width: 800px) {
