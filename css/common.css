@@ -13,11 +13,6 @@ header {
     padding: 10px 20px;
 }
 
-.header-logo img {
-    max-width: 100px;
-    height: auto;
-}
-
 .header-inner {
     display: flex;
     justify-content: space-between;
