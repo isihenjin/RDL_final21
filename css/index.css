@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .first-view {
-  height: calc(100vh - 110px);
+  
   background-image: url(../images/common/logo_footer.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -62,16 +62,21 @@
   
 }
 .item {
+  list-style-type: none;
   width: 20%;
+  height: 20%;
   margin: 1%;
   box-sizing: border-box;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 .item img {
-  max-width: 100%;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
 }
-
 
 
 
@@ -104,7 +109,7 @@
   }
 
   .first-view {
-    height: 50vh; /* 高さを半分に設定 */
+    height: 50vh;
     background-image: url(../images/common/logo_footer.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
