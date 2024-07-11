@@ -1,27 +1,60 @@
 @charset "utf-8";
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+h1 {
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
 }
 .container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
 }
 
-h1 {
-    text-align: center;
-}
-p {
-    line-height: 1.6;
-}
-.image-container {
-    text-align: center;
-}
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+  }
+
 .image-container img {
-    max-width: 100%;
+    width: 80%;
     height: auto;
-    border-radius: 5px;
+    margin-left: 20px;
 }
+
+.feature-text {
+    margin-bottom: 20px;
+}
+.countries{
+    display: flex;
+}
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  
+  .info-header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .countries {
+    list-style-type: disc;
+    white-space: nowrap;
+    overflow: hidden;        /* はみ出した部分を隠す */
+    text-overflow: ellipsis; 
+  }
+  
+  .map-section {
+    margin-top: 20px;
+    margin-left: 250px;
+  }
+  
+  .map-embed {
+    width: 500px;
+    height: 200px;
+    border: 0;
+  }
