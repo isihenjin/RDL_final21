@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #666666;
+    background-color: #888888;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -82,7 +82,7 @@ footer {
         top: 0;
         left: 0;
         right: 0;
-        background-color: #FFFFFF;
+        background-color: #888888;
         height: 50px;
         z-index: 10;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);

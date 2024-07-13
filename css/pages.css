@@ -18,22 +18,21 @@ h1 {
   }
 
 .image-container img {
-    width: 80%;
-    height: auto;
+    width: 400px;
+    height: 400px;
     margin-left: 20px;
 }
 
 .feature-text {
     margin-bottom: 20px;
 }
-.countries{
-    display: flex;
-}
+
 .info-section {
     flex: 1;
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    margin: 0px 100px;
   }
   
   .info-header {
@@ -42,19 +41,65 @@ h1 {
   }
   
   .countries {
+    display: flex;
     list-style-type: disc;
     white-space: nowrap;
-    overflow: hidden;        /* はみ出した部分を隠す */
+    overflow: hidden;        
     text-overflow: ellipsis; 
   }
   
-  .map-section {
+  .countries-name {
+    margin-right: 20px; /* ここで希望する間隔に調整 */
+}
+
+.map-section {
+    margin-left: 200px; /* 必要に応じて調整 */
     margin-top: 20px;
-    margin-left: 250px;
-  }
+}
+
   
   .map-embed {
-    width: 500px;
-    height: 200px;
+    width: 640px;
+    height: 360px;
     border: 0;
   }
+
+  /* 縦長の画面（スマートフォンやタブレット）向けのスタイル */
+@media screen and (max-width: 768px) {
+  .info-header {
+    margin-left: 0px;
+  }
+  .container{
+    margin-top: 100px;
+  }
+  .main-content {
+      display: block;
+  }
+
+  .info-section {
+    display: block;
+    margin-left: 0px;
+  }
+
+  .image-container img {
+      display: block;
+      margin: 0 auto;
+      width: 250px;
+      height: 250px;
+  }
+
+  .info-header {
+      font-size: 1.0em; /* .feature-textのフォントサイズに統一 */
+  }
+
+  .countries {
+      display: block;
+  }
+
+  .map-embed {
+      width: 250px;
+      height: 250px;
+      display: block;
+      margin: 0 ;
+  }
+}
