@@ -65,7 +65,7 @@ h1 {
   }
 
   /* 縦長の画面（スマートフォンやタブレット）向けのスタイル */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .info-header {
     margin-left: 0px;
   }
@@ -89,17 +89,20 @@ h1 {
   }
 
   .info-header {
-      font-size: 1.0em; /* .feature-textのフォントサイズに統一 */
+      font-size: 1.0em;
+      margin-left: 0px;
   }
-
   .countries {
       display: block;
   }
 
+  .map-section {
+    margin: flex;
+  }
   .map-embed {
       width: 250px;
       height: 250px;
-      display: block;
-      margin: 0 ;
+      
+      margin-left: 0 px;
   }
 }
