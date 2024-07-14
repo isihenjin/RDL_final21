@@ -1,4 +1,12 @@
 @charset "utf-8";
+.header-logo img {
+    width: 40px;
+    height: auto;
+
+}
+.toggle-menu-button {
+    display: none;
+}
 body {
     font-family: "Noto Serif JP", serif;
     margin: 0;
@@ -8,18 +16,18 @@ body {
 header {
     background-color: #888888;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* 変更 */
+
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 0px;
 }
 
 .header-inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
+    justify-content: flex-end;
 }
-
 
 .title-text {
     color: rgb(255, 255, 255);
@@ -28,7 +36,7 @@ header {
 
 .header-site-menu {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 nav ul {
@@ -58,23 +66,34 @@ footer {
     padding: 10px 20px;
     color: rgb(255, 255, 255);
 }
-.site-menu{
+
+.site-menu {
     color: rgb(255, 255, 255);
 }
 
-@media (max-width: 800px) {
-    .main {
-        padding-top: 50px;
+@media (max-width: 850px) {
+    nav ul li {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .site-menu ul {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        background-color: #888888;
+        width: 100%; 
     }
 
     .site-menu li {
-        margin-top: 20px;
-        z-index: 2;
+        flex: 1 1 calc(25% - 20px); 
+        margin: 10px;
+        box-sizing: border-box;
+        align-items: center;
+        color: #FFFFFF;
     }
 
     .header {
@@ -92,41 +111,44 @@ footer {
         padding-right: 20px;
         height: 100%;
         position: relative;
+        justify-content: space-between;
     }
 
     .header-logo img {
         max-width: 65px;
         height: auto;
-        left: 0;
+        margin-left: 30px;
     }
 
     .header-site-menu {
         position: absolute;
-        top: 60px; /* ヘッダーの高さと一致させる */
+        top: 60px; 
         left: 0;
         right: 0;
         width: 100%;
         color: #FFFFFF;
-        background-color: #666666;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        background-color: #888888;
+        padding: 0;
+        margin:0;
         display: none;
         z-index: 1;
+        align-items: center;
     }
 
     .toggle-menu-button {
         z-index: 2;
         display: block;
         width: 44px;
-        height: 34px;
+        height: 44px; 
         background-image: url(../images/common/bar.png);
-        background-size: 50%;
+        background-size: 60%; 
         background-position: center;
         background-repeat: no-repeat;
         background-color: transparent;
         border: none;
         border-radius: 0;
         outline: none;
+        margin-left: auto; /* 追加 */
     }
 
     .header-site-menu.is-show {
@@ -146,15 +168,6 @@ footer {
 
     .footer .site-menu {
         margin-bottom: 50px;
-    }
-
-    .footer .social-media {
-        margin-bottom: 20px;
-        margin-right: 20px;
-    }
-
-    .footer .social-media a {
-        margin: 0 10px;
     }
 
     .footer .site-menu a {

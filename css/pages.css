@@ -1,10 +1,12 @@
 @charset "utf-8";
+
 h1 {
     color: #ffffff;
     padding: 10px;
     text-align: center;
     font-size: 2em;
 }
+
 .container {
     width: 80%;
     margin: auto;
@@ -14,8 +16,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    
-  }
+}
 
 .image-container img {
     width: 400px;
@@ -33,76 +34,108 @@ h1 {
     flex-direction: column;
     margin-left: 50px;
     margin: 0px 100px;
-  }
-  
-  .info-header {
+}
+
+.info-header {
     font-size: 1.2em;
     margin-bottom: 10px;
-  }
-  
-  .countries {
+}
+
+.countries {
     display: flex;
     list-style-type: disc;
     white-space: nowrap;
     overflow: hidden;        
-    text-overflow: ellipsis; 
-  }
-  
-  .countries-name {
-    margin-right: 20px; /* ここで希望する間隔に調整 */
+    text-overflow: ellipsis;
+}
+
+.countries-name {
+    margin-right: 20px;
 }
 
 .map-section {
-    margin-left: 200px; /* 必要に応じて調整 */
+    margin-left: 200px;
     margin-top: 20px;
 }
 
-  
-  .map-embed {
+.map-embed {
     width: 640px;
-    height: 360px;
+    height: 200px;
     border: 0;
-  }
+}
 
-  /* 縦長の画面（スマートフォンやタブレット）向けのスタイル */
+/* 縦長の画面（スマートフォンやタブレット）向けのスタイル */
 @media screen and (max-width: 850px) {
-  .info-header {
-    margin-left: 0px;
-  }
-  .container{
-    margin-top: 100px;
-  }
-  .main-content {
-      display: block;
-  }
+    .info-header {
+        margin-left: 0px;
+    }
 
-  .info-section {
-    display: block;
-    margin-left: 0px;
-  }
+    .container {
+        margin-top: 100px;
+    }
 
-  .image-container img {
-      display: block;
-      margin: 0 auto;
-      width: 250px;
-      height: 250px;
-  }
+    .main-content {
+        display: block;
+    }
 
-  .info-header {
-      font-size: 1.0em;
-      margin-left: 0px;
-  }
-  .countries {
-      display: block;
-  }
+    .info-section {
+        display: block;
+        margin-left: 0px;
+    }
 
-  .map-section {
-    margin: flex;
-  }
-  .map-embed {
-      width: 250px;
-      height: 250px;
-      
-      margin-left: 0 px;
-  }
+    .image-container img {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+    }
+
+    .info-header {
+        font-size: 1.0em;
+        margin-left: 0px;
+    }
+
+    .countries {
+        display: block;
+    }
+
+    .map-section {
+        margin: 0;
+    }
+
+    .map-embed {
+        width: 250px;
+        height: 250px;
+        margin-left: 0px;
+    }
+}
+
+/* 画面サイズが800px以下の場合のスタイル */
+@media screen and (max-width: 800px) {
+    .site-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .site-menu-item {
+        flex: 0 0 24%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .site-menu-item:nth-child(4n+1) {
+        clear: left;
+    }
+
+    .site-menu {
+        background-color: #f0f0f0;
+        width: 100vw;
+    }
+
+    .toggle-button img {
+        width: 50px; /* 元のサイズから大きく */
+        height: 50px;
+    }
 }
