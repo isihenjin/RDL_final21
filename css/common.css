@@ -2,11 +2,13 @@
 .header-logo img {
     width: 40px;
     height: auto;
-
+    margin-left: 20px; /* 画像の左側にスペースを追加 */
 }
+
 .toggle-menu-button {
     display: none;
 }
+
 body {
     font-family: "Noto Serif JP", serif;
     margin: 0;
@@ -16,8 +18,7 @@ body {
 header {
     background-color: #888888;
     display: flex;
-    justify-content: space-between; /* 変更 */
-
+    justify-content: space-between; /* ヘッダーのアイテムを両端に配置 */
     align-items: center;
     padding: 20px 0px;
 }
@@ -26,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between; /* 内部のアイテムを両端に配置 */
 }
 
 .title-text {
@@ -36,7 +37,7 @@ header {
 
 .header-site-menu {
     display: flex;
-    align-items: start;
+    align-items: center; /* 上部揃えから中央揃えに変更 */
 }
 
 nav ul {
@@ -53,7 +54,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color:#FFFFFF;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 20px;
 }
@@ -85,11 +86,11 @@ footer {
         padding: 0;
         margin: 0;
         background-color: #888888;
-        width: 100%; 
+        width: 100%;
     }
 
     .site-menu li {
-        flex: 1 1 calc(25% - 20px); 
+        flex: 1 1 calc(25% - 20px);
         margin: 10px;
         box-sizing: border-box;
         align-items: center;
@@ -122,14 +123,14 @@ footer {
 
     .header-site-menu {
         position: absolute;
-        top: 60px; 
+        top: 60px;
         left: 0;
         right: 0;
         width: 100%;
         color: #FFFFFF;
         background-color: #888888;
         padding: 0;
-        margin:0;
+        margin: 0;
         display: none;
         z-index: 1;
         align-items: center;
@@ -139,16 +140,16 @@ footer {
         z-index: 2;
         display: block;
         width: 44px;
-        height: 44px; 
+        height: 44px;
         background-image: url(../images/common/bar.png);
-        background-size: 60%; 
+        background-size: 60%;
         background-position: center;
         background-repeat: no-repeat;
         background-color: transparent;
         border: none;
         border-radius: 0;
         outline: none;
-        margin-left: auto; /* 追加 */
+        margin-left: auto;
     }
 
     .header-site-menu.is-show {
